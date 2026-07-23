@@ -1,8 +1,8 @@
 import time
-
 from cv_parser import extraer_texto_pdf
 from connectors.chiletrabajos import obtener_ofertas_chiletrabajos
 from connectors.getonbrd import obtener_ofertas_getonbrd
+from connectors.bne import obtener_ofertas_bne
 from matcher import calcular_compatibilidad
 from db import obtener_conexion, ya_fue_vista, marcar_como_vista
 from notifier import notificar_oferta
@@ -15,6 +15,7 @@ def obtener_todas_las_ofertas():
     ofertas = []
     ofertas.extend(obtener_ofertas_chiletrabajos()[:100])
     ofertas.extend(obtener_ofertas_getonbrd())
+    ofertas.extend(obtener_ofertas_bne())
     return ofertas
 
 
