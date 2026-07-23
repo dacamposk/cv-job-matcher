@@ -4,3 +4,4 @@ __pycache__/
 *.db
 mi_cv.pdf
 *.pdf
+*.html
