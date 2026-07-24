@@ -36,21 +36,24 @@ Todas las fuentes fueron seleccionadas verificando previamente sus políticas de
 
 ## Estructura del proyecto
 
+```text
 cv-job-matcher/
 ├── src/
-│ ├── app.py # Interfaz web (Streamlit)
-│ ├── main.py # Orquestador del bot (modo consola/automatización)
-│ ├── cv_parser.py # Extracción de texto y skills del CV
-│ ├── skills_data.py # Diccionario de tecnologías reconocidas
-│ ├── matcher.py # Cálculo de compatibilidad (TF-IDF)
-│ ├── db.py # Registro de ofertas ya notificadas (SQLite)
-│ ├── notifier.py # Envío de notificaciones a Discord
-│ └── connectors/
-│ ├── chiletrabajos.py
-│ ├── getonbrd.py
-│ └── bne.py
+│   ├── app.py              # Interfaz web (Streamlit)
+│   ├── main.py             # Orquestador del bot (modo consola/automatización)
+│   ├── cv_parser.py        # Extracción de texto y skills del CV
+│   ├── skills_data.py      # Diccionario de tecnologías requeridas
+│   ├── matcher.py          # Cálculo de compatibilidad (TF-IDF)
+│   ├── db.py               # Registro de ofertas ya notificadas (SQLite)
+│   ├── notifier.py         # Envío de notificaciones a Discord
+│   └── connectors/
+│       ├── chiletrabajos.py
+│       ├── getonbrd.py
+│       └── bne.py
+│
 ├── requirements.txt
 └── README.md
+```
 
 ## Instalación
 
